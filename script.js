@@ -841,8 +841,8 @@ deleteBtn.addEventListener("click", () => {
     }
     else if (currOperandData.innerHTML === "" && prevOperandData.innerHTML !== "") {
         prevOperandData.innerHTML = prevOperandData.innerText.toString().slice(0, -1);
+        prevNumber = parseFloat(prevOperandData.innerText);
     }
-
 });
 
 
